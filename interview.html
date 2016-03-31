@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function F(a){
+				return new F.fn(a);
+			}
+			F.fn=function(a){
+				this.a=a;
+			}
+			F.fn.prototype.sayA=function(){
+				alert(this.a);
+			}
+			F.init=function(){
+				return this;
+			}
+			var x=new F(3);
+			var y=F(4);
+			var a=[1,2,3,4,5,6,7,8,9,10];
+			var i=0;
+			function output(){
+				if(i<a.length){
+					console.log(a[i++]);
+					setTimeout(output,1000)
+				}
+			}
+			output();
+			var s='var x=require("./js/main.js")';
+			var r=/^s*var\s+(?:\w|_|\$).*\s*=\s*require\("(.+[^"])"\)$/g;
+			var m=r.exec(s);
+			var sc=document.createElement('script');
+			sc.src=m[1];
+			document.body.appendChild(sc);
+			function Type1(){};
+			function Type2(){
+				Type1.call(this);
+			}
+			Type2.prototype=Object.create(Type1.prototype);
+			Type2.prototype.constructor=Type2;
+			var t2=new Type2();
+		</script>
+	</body>
+</html>
