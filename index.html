@@ -289,233 +289,263 @@ img {
   max-width: 100%
 }
 </style>
+<style type="text/css">
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+.pl-c {
+    color: #969896;
+}
+
+.pl-c1,.pl-mdh,.pl-mm,.pl-mp,.pl-mr,.pl-s1 .pl-v,.pl-s3,.pl-sc,.pl-sv {
+    color: #0086b3;
+}
+
+.pl-e,.pl-en {
+    color: #795da3;
+}
+
+.pl-s1 .pl-s2,.pl-smi,.pl-smp,.pl-stj,.pl-vo,.pl-vpf {
+    color: #333;
+}
+
+.pl-ent {
+    color: #63a35c;
+}
+
+.pl-k,.pl-s,.pl-st {
+    color: #a71d5d;
+}
+
+.pl-pds,.pl-s1,.pl-s1 .pl-pse .pl-s2,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sra,.pl-sr .pl-sre,.pl-src,.pl-v {
+    color: #df5000;
+}
+
+.pl-id {
+    color: #b52a1d;
+}
+
+.pl-ii {
+    background-color: #b52a1d;
+    color: #f8f8f8;
+}
+
+.pl-sr .pl-cce {
+    color: #63a35c;
+    font-weight: bold;
+}
+
+.pl-ml {
+    color: #693a17;
+}
+
+.pl-mh,.pl-mh .pl-en,.pl-ms {
+    color: #1d3e81;
+    font-weight: bold;
+}
+
+.pl-mq {
+    color: #008080;
+}
+
+.pl-mi {
+    color: #333;
+    font-style: italic;
+}
+
+.pl-mb {
+    color: #333;
+    font-weight: bold;
+}
+
+.pl-md,.pl-mdhf {
+    background-color: #ffecec;
+    color: #bd2c00;
+}
+
+.pl-mdht,.pl-mi1 {
+    background-color: #eaffea;
+    color: #55a532;
+}
+
+.pl-mdr {
+    color: #795da3;
+    font-weight: bold;
+}
+
+.pl-mo {
+    color: #1d3e81;
+}
+.task-list {
+padding-left:10px;
+margin-bottom:0;
+}
+
+.task-list li {
+    margin-left: 20px;
+}
+
+.task-list-item {
+list-style-type:none;
+padding-left:10px;
+}
+
+.task-list-item label {
+font-weight:400;
+}
+
+.task-list-item.enabled label {
+cursor:pointer;
+}
+
+.task-list-item+.task-list-item {
+margin-top:3px;
+}
+
+.task-list-item-checkbox {
+display:inline-block;
+margin-left:-20px;
+margin-right:3px;
+vertical-align:1px;
+}
+</style>
 </head>
 <body>
-<h1>求职意向：Web前端开发工程师</h1>
-<hr />
-<h1>联系方式</h1>
+<h1 id="-web-">求职意向：Web前端开发工程师</h1>
+<hr>
+<h1 id="-">联系方式</h1>
 <ul>
-<li>手机：15388017559</li>
-<li>Email：rayjump@163.com</li>
-</ul>
-<hr />
-<h1>个人信息</h1>
+<li>手机：15388017559</li><li>Email：rayjump@163.com</li></ul>
+<hr>
+<h1 id="-">个人信息</h1>
 <ul>
-<li>姓名：雷佳旺</li>
-<li>性别：男</li>
-<li>出生年月：1991年11月7日</li>
-<li>现居城市：长沙</li>
-<li>工作年限：2.5年</li>
-<li>Github: <a href="https://github.com/ljwrer">https://github.com/ljwrer</a></li>
-</ul>
-<hr />
-<h1>教育背景</h1>
+<li>姓名：雷佳旺</li><li>性别：男</li><li>出生年月：1991年11月7日</li><li>现居城市：长沙</li><li>工作年限：3年</li><li>Github： <a href="https：//github.com/ljwrer">https：//github.com/ljwrer</a></li><li>Blog： <a href="http：//ljwrer.github.io">http：//ljwrer.github.io</a></li></ul>
+<hr>
+<h1 id="-">教育背景</h1>
 <ul>
-<li>学历：大学本科</li>
-<li>毕业院校：西安电子科技大学</li>
-<li>所学专业：通信工程学院 信息工程</li>
-<li>入学和毕业年份：2009年-2013年</li>
-<li>学制：全日制</li>
-<li>外语：CET4 548</li>
-</ul>
-<hr />
-<h1>工作经历</h1>
-<h2>步步高电商（云猴网）</h2>
+<li>学历：大学本科</li><li>毕业院校：西安电子科技大学</li><li>所学专业：通信工程学院 信息工程</li><li>入学和毕业年份：2009年-2013年</li><li>学制：全日制</li><li>外语：CET4 548</li></ul>
+<hr>
+<h1 id="-">工作经历</h1>
+<h2 id="-">步步高电商（云猴网）</h2>
 <ul>
-<li>所任职位：Web前端开发工程师</li>
-<li>起止年月：2015年10月至今</li>
-<li>所在部门：UED</li>
-</ul>
-<h2>湖南荣乐科技有限公司</h2>
+<li>所任职位：Web前端开发工程师</li><li>起止年月：2015年10月至今</li><li>所在部门：UED</li></ul>
+<h2 id="-">湖南荣乐科技有限公司</h2>
 <ul>
-<li>所任职位：Web前端开发工程师</li>
-<li>起止年月：2015年4月至2015年10月</li>
-<li>所在部门：研发部</li>
-</ul>
-<h2>长沙高新开发区盛大金禧金融服务有限公司</h2>
+<li>所任职位：Web前端开发工程师</li><li>起止年月：2015年4月至2015年10月</li><li>所在部门：研发部</li></ul>
+<h2 id="-">长沙高新开发区盛大金禧金融服务有限公司</h2>
 <ul>
-<li>所任职位：Web前端开发工程师</li>
-<li>起止年月：2014年7月 ~ 2015年4月</li>
-<li>所在部门：研发部</li>
-</ul>
-<h2>湖南源科高新技术有限公司</h2>
+<li>所任职位：Web前端开发工程师</li><li>起止年月：2014年7月 ~ 2015年4月</li><li>所在部门：研发部</li></ul>
+<h2 id="-">湖南源科高新技术有限公司</h2>
 <ul>
-<li>所任职位：技术支持工程师</li>
-<li>起止年月：2013年7月 ~ 2014年5月</li>
-<li>所在部门：大工业事业部</li>
-</ul>
-<hr />
-<h1>项目经历</h1>
-<h2>步步高梅溪新天地微信公众号</h2>
+<li>所任职位：技术支持工程师</li><li>起止年月：2013年7月 ~ 2014年5月</li><li>所在部门：大工业事业部</li></ul>
+<hr>
+<h1 id="-">项目经历</h1>
+<h2 id="-">步步高门店管理系统</h2>
 <ul>
-<li>项目地址：<a href="http://wx.yunhou.com">http://wx.yunhou.com</a></li>
-<li>项目类型：微信公众号</li>
-<li>
-职责：
+<li>项目地址：内部系统</li><li>项目类型：Hybrid App</li><li>平台：Android/IOS/Web</li><li>职责：<ul>
+<li>集成vue与Echarts</li><li>无状态组件编写</li><li>JavaScript与Native交互</li></ul>
+</li><li>技术选型：<ul>
+<li>MVVM：vue</li><li>Flux：vuex</li><li>router：vue-router</li><li>js：ES6</li><li>UI：sui+vux</li><li>charting：Echarts</li><li>css：less</li><li>middleware：express</li><li>build：webpack</li><li>framework：cordova+Crosswalk</li></ul>
+</li></ul>
+<h2 id="-">步步高微信公众号</h2>
 <ul>
-<li>公用消息系统</li>
-<li>退货模块，商务卡模块，客服列表页</li>
-<li>复杂静态页面切图</li>
-</ul>
-</li>
-<li>
-技术选型
+<li>项目地址：<a href="http：//wx.yunhou.com">http：//wx.yunhou.com</a></li><li>项目类型：微信公众号</li><li>职责：<ul>
+<li>公用消息系统</li><li>退货模块，商务卡模块，客服列表页</li></ul>
+</li><li>技术选型：Zepto+iScroll+微信js-sdk+flexible.js+seajs+sass/compass+fis+EJS+express</li></ul>
+<h2 id="-b2b-">步步高B2B订货平台</h2>
 <ul>
-<li>DOM：Zepto,iScroll</li>
-<li>工具：微信js-sdk，flexible.js，seajs</li>
-<li>css：sass/compass</li>
-<li>自动化：fis</li>
-<li>模板：EJS</li>
-<li>中间件：express</li>
-</ul>
-</li>
-</ul>
-<h2>步步高订货平台</h2>
+<li>项目地址：<a href="http：//b2bsale.bbg.com.cn">http：//b2bsale.bbg.com.cn</a></li><li>项目类型：B2B商城</li><li>职责：<ul>
+<li>新闻公告，密码修改，收藏管理模块</li><li>面包屑组件，标签管理组件，按钮组件</li><li>公用css</li></ul>
+</li><li>技术选型：jQuery+seajs+EventEmitter+sass/compass+fis</li></ul>
+<h2 id="-">步步高会员年度幸福指数专题</h2>
 <ul>
-<li>项目地址：<a href="http://b2bsale.bbg.com.cn">http://b2bsale.bbg.com.cn</a></li>
-<li>项目类型：B2B商城</li>
-<li>
-职责：
+<li>项目地址：<a href="http：//wx.yunhou.com/activity/memberData2016">http：//wx.yunhou.com/activity/memberData2016</a></li><li>项目类型：微信滚动页，类支付宝年度账单</li><li>职责：<ul>
+<li>所有前端工作</li><li>node接口，路由，模板填充</li></ul>
+</li><li>技术选型：Zepto+Swiper+微信js-sdk+flexible.js+seajs+sass/compass+gulp+express+EJS</li></ul>
+<h2 id="-oms-">云猴网OMS系统优化</h2>
 <ul>
-<li>新闻公告，密码修改，收藏管理模块</li>
-<li>面包屑组件，标签管理组件，按钮组件</li>
-<li>部分公用css</li>
-</ul>
-</li>
-<li>
-技术选型
+<li>项目地址：内部后台系统</li><li>项目类型：订单管理系统</li><li>职责：前端性能优化</li><li>技术选型：Dojo+stylus+CoffeeScript</li><li>优化工具：Dojo build,r.js</li></ul>
+<h2 id="-">盛大金禧千店贷</h2>
 <ul>
-<li>DOM：jQuery及插件若干</li>
-<li>模块：CMD(seajs)</li>
-<li>工具：EventEmitter</li>
-<li>css：sass/compass</li>
-<li>自动化：fis</li>
-</ul>
-</li>
-</ul>
-<h2>步步高年度幸福指数专题</h2>
+<li>项目地址：<a href="http：//www.1000dd.com">http：//www.1000dd.com</a></li><li>项目类型：互联网金融P2P网贷</li><li>职责：所有专题页前端部分</li><li>技术选型：jQuery+Animate.css </li></ul>
+<h2 id="-web-">网易Web前端开发实践</h2>
 <ul>
-<li>项目地址：<a href="http://wx.yunhou.com/activity/memberData2016">http://wx.yunhou.com/activity/memberData2016</a></li>
-<li>项目类型：微信滚动页，类支付宝年度账单</li>
-<li>
-职责：
+<li>项目地址：<a href="https：//github.com/ljwrer/FEHomework">https：//github.com/ljwrer/FEHomework</a></li><li>demo：<a href="http：//ljwrer.github.io/FEHomework/">http：//ljwrer.github.io/FEHomework/</a></li><li>项目要求：<ul>
+<li>兼容IE8+</li><li>使用原生JavaScript</li><li>宽屏窄屏自适应布局</li><li>使用Ajax异步刷新页面</li></ul>
+</li></ul>
+<hr>
+<h1 id="-">技能清单</h1>
 <ul>
-<li>所有前端工作</li>
-<li>node接口，路由，模板填充</li>
-</ul>
-</li>
-<li>
-技术选型
-<ul>
-<li>DOM：Zepto,Swiper</li>
-<li>工具：微信js-sdk，flexible.js，seajs</li>
-<li>css：sass/compass</li>
-<li>自动化：gulp</li>
-<li>模板：EJS</li>
-<li>中间件：express</li>
-</ul>
-</li>
-</ul>
-<h2>云猴网OMS系统优化</h2>
-<ul>
-<li>项目地址：内部后台系统</li>
-<li>项目类型：订单管理系统</li>
-<li>职责：前端性能优化</li>
-<li>
-技术选型:
-<ul>
-<li>DOM：Dojo</li>
-<li>模块：AMD</li>
-<li>css：stylus</li>
-<li>js：coffeescript</li>
-<li>优化工具:Dojo build,r.js</li>
-</ul>
-</li>
-</ul>
-<h2>盛大金禧千店贷</h2>
-<ul>
-<li>项目地址：<a href="http://www.1000dd.com">http://www.1000dd.com</a></li>
-<li>项目类型：互联网金融P2P网贷</li>
-<li>职责：所有专题页前端部分</li>
-<li>
-技术选型:
-<ul>
-<li>DOM:jQuery及插件若干</li>
-<li>动画：Animate.css  
-</li>
-</ul>
-</li>
-</ul>
-<h2>网易Web前端开发实践</h2>
-<ul>
-<li>项目地址：<a href="https://github.com/ljwrer/FrontEndWebDeveloperNanodegreeHomework">https://github.com/ljwrer/FrontEndWebDeveloperNanodegreeHomework</a></li>
-<li>demo：<a href="http://ljwrer.github.io/FrontEndWebDeveloperNanodegreeHomework/">http://ljwrer.github.io/FrontEndWebDeveloperNanodegreeHomework/</a></li>
-<li>项目类型：SPA</li>
-<li>
-项目要求：
-<ul>
-<li>兼容IE8+</li>
-<li>使用原生JavaScript</li>
-<li>宽屏窄屏自适应布局</li>
-<li>使用Ajax异步刷新页面</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h1>技能清单</h1>
-<ul>
-<li>
-html+css
-<ul>
-<li>布局</li>
-<li>响应式</li>
-<li>移动端适配</li>
-</ul>
-</li>
-<li>
-html5+css3
-<ul>
-<li>弹性布局</li>
-<li>渐变，阴影与圆角,3D变形与动画</li>
-</ul>
-</li>
-<li>
-JavaScript
-<ul>
-<li>Vanilla JS</li>
-</ul>
-</li>
-<li>
-库和框架
-<ul>
-<li>css:sass,compass,Animate.css</li>
-<li>DOM库:jQuery,Dojo,Zepto,video.js,velocity.js</li>
-<li>工具库:EventEmitter,es5-shim,underscore,babel</li>
-<li>移动端：flexible.js,iScroll,swiper,微信js-sdk</li>
-</ul>
-</li>
-<li>
-工程化
-<ul>
-<li>版本控制:Git,SVN,github</li>
-<li>模块化:AMD(RequireJS),CMD(seajs),CommonJS</li>
-</ul>
-</li>
-<li>
-node
-<ul>
-<li>自动化:gulp,fis,webpack,bower,yeoman</li>
-<li>模板引擎：EJS</li>
-<li>中间件：express</li>
-</ul>
-</li>
-<li>
-调研中
-<ul>
-<li>React,ES6</li>
-</ul>
-</li>
-</ul>
+<li>html+css<ul>
+<li>布局</li><li>响应式</li><li>移动端适配</li></ul>
+</li><li>html5+css3<ul>
+<li>弹性布局</li><li>渐变，阴影与圆角,3D变形与动画</li></ul>
+</li><li>JavaScript<ul>
+<li>Vanilla JS</li><li>ES6</li></ul>
+</li><li>库和框架<ul>
+<li>css：sass,compass,Animate.css</li><li>MVVM：vue</li><li>Flux：vuex</li><li>DOM库：jQuery,Dojo,Zepto,video.js,velocity.js</li><li>工具库：EventEmitter,es5-shim,underscore,babel</li><li>移动端：flexible.js,iScroll,swiper,微信js-sdk</li></ul>
+</li><li>工程化<ul>
+<li>版本控制：Git,SVN</li><li>模块化：AMD(RequireJS),CMD(seajs),CommonJS</li></ul>
+</li><li>node<ul>
+<li>自动化：gulp,webpack,bower,yeoman</li><li>模板引擎：EJS</li><li>中间件：express</li></ul>
+</li></ul>
 
 </body>
 </html>
