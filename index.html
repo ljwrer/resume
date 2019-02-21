@@ -1,130 +1,1257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-cmn-Hans">
 <head>
-    <title>雷佳旺-前端开发工程师-简历</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="renderer" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="Keywords" content="雷佳旺,前端,简历" />
-    <meta name="Description" content="雷佳旺前端工程师简历" />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="github-markdown.css">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title>雷佳旺-前端工程师-简历</title>
+    <meta name="Keywords" content="雷佳旺,前端,简历"/>
+    <meta name="Description" content="雷佳旺前端工程师简历"/>
+    <link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext'
+          rel='stylesheet' type='text/css'/>
+    <style type='text/css'>html {
+        overflow-x: initial !important;
+    }
+
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --select-text-bg-color: #B5D6FC;
+        --select-text-font-color: auto;
+        --monospace: "Lucida Console", Consolas, "Courier", monospace;
+    }
+
+    html {
+        font-size: 14px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 1rem;
+        line-height: 1.42857143;
+        overflow-x: hidden;
+        background-image: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+        background-clip: inherit;
+        background-color: inherit;
+        background-position: inherit inherit;
+        background-repeat: inherit inherit;
+    }
+
+    iframe {
+        margin: auto;
+    }
+
+    a.url {
+        word-break: break-all;
+    }
+
+    a:active, a:hover {
+        outline: 0;
+    }
+
+    .in-text-selection, ::selection {
+        text-shadow: none;
+        background: var(--select-text-bg-color);
+        color: var(--select-text-font-color);
+    }
+
+    #write {
+        margin: 0 auto;
+        height: auto;
+        width: inherit;
+        word-break: normal;
+        word-wrap: break-word;
+        position: relative;
+        white-space: normal;
+        overflow-x: visible;
+        padding-top: 40px;
+    }
+
+    #write.first-line-indent p {
+        text-indent: 2em;
+    }
+
+    #write.first-line-indent li p, #write.first-line-indent p * {
+        text-indent: 0;
+    }
+
+    #write.first-line-indent li {
+        margin-left: 2em;
+    }
+
+    .for-image #write {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    body.typora-export {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .typora-export .footnote-line, .typora-export li, .typora-export p {
+        white-space: pre-wrap;
+    }
+
+    @media screen and (max-width: 500px) {
+        body.typora-export {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #write {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .CodeMirror-sizer {
+            margin-left: 0 !important;
+        }
+
+        .CodeMirror-gutters {
+            display: none !important;
+        }
+    }
+
+    #write li > figure:first-child {
+        margin-top: -20px;
+    }
+
+    #write ol, #write ul {
+        position: relative;
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    button, input, select, textarea {
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-variant-caps: inherit;
+        font-weight: inherit;
+        font-stretch: inherit;
+        line-height: inherit;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+        line-height: normal;
+        padding: 0;
+    }
+
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+    #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
+        width: inherit;
+    }
+
+    #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p {
+        position: relative;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        break-after: avoid-page;
+        break-inside: avoid;
+        orphans: 2;
+    }
+
+    p {
+        orphans: 4;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    .md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .md-blockmeta {
+        color: rgb(204, 204, 204);
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    sup.md-footnote {
+        padding: 2px 4px;
+        background-color: rgba(238, 238, 238, 0.701961);
+        color: rgb(85, 85, 85);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        cursor: pointer;
+    }
+
+    sup.md-footnote a, sup.md-footnote a:hover {
+        color: inherit;
+        text-transform: inherit;
+        text-decoration: inherit;
+    }
+
+    #write input[type="checkbox"] {
+        cursor: pointer;
+        width: inherit;
+        height: inherit;
+    }
+
+    figure {
+        overflow-x: auto;
+        margin: 1.2em 0;
+        max-width: calc(100% + 16px);
+        padding: 0;
+    }
+
+    figure > table {
+        margin: 0 !important;
+    }
+
+    tr {
+        break-inside: avoid;
+        break-after: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        overflow: auto;
+        break-inside: auto;
+        text-align: left;
+    }
+
+    table.md-table td {
+        min-width: 32px;
+    }
+
+    .CodeMirror-gutters {
+        border-right-width: 0;
+        background-color: inherit;
+    }
+
+    .CodeMirror {
+        text-align: left;
+    }
+
+    .CodeMirror-placeholder {
+        opacity: 0.3;
+    }
+
+    .CodeMirror pre {
+        padding: 0 4px;
+    }
+
+    .CodeMirror-lines {
+        padding: 0;
+    }
+
+    div.hr:focus {
+        cursor: none;
+    }
+
+    #write pre {
+        white-space: pre-wrap;
+    }
+
+    #write.fences-no-line-wrapping pre {
+        white-space: pre;
+    }
+
+    #write pre.ty-contain-cm {
+        white-space: normal;
+    }
+
+    .CodeMirror-gutters {
+        margin-right: 4px;
+    }
+
+    .md-fences {
+        font-size: 0.9rem;
+        display: block;
+        break-inside: avoid;
+        text-align: left;
+        overflow: visible;
+        white-space: pre;
+        background-image: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+        background-clip: inherit;
+        background-color: inherit;
+        position: relative !important;
+        background-position: inherit inherit;
+        background-repeat: inherit inherit;
+    }
+
+    .md-diagram-panel {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 8px;
+        overflow-x: auto;
+    }
+
+    #write .md-fences.mock-cm {
+        white-space: pre-wrap;
+    }
+
+    .md-fences.md-fences-with-lineno {
+        padding-left: 0;
+    }
+
+    #write.fences-no-line-wrapping .md-fences.mock-cm {
+        white-space: pre;
+        overflow-x: auto;
+    }
+
+    .md-fences.mock-cm.md-fences-with-lineno {
+        padding-left: 8px;
+    }
+
+    .CodeMirror-line, twitterwidget {
+        break-inside: avoid;
+    }
+
+    .footnotes {
+        opacity: 0.8;
+        font-size: 0.9rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .footnotes + .footnotes {
+        margin-top: 0;
+    }
+
+    .md-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: top;
+        text-decoration: none;
+        text-shadow: none;
+        float: none;
+        position: static;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        cursor: inherit;
+        line-height: normal;
+        font-weight: 400;
+        text-align: left;
+        box-sizing: content-box;
+        direction: ltr;
+        background-position: 0 0;
+        background-repeat: initial initial;
+    }
+
+    li div {
+        padding-top: 0;
+    }
+
+    blockquote {
+        margin: 1rem 0;
+    }
+
+    li .mathjax-block, li p {
+        margin: 0.5rem 0;
+    }
+
+    li {
+        margin: 0;
+        position: relative;
+    }
+
+    blockquote > :last-child {
+        margin-bottom: 0;
+    }
+
+    blockquote > :first-child, li > :first-child {
+        margin-top: 0;
+    }
+
+    .footnotes-area {
+        color: rgb(136, 136, 136);
+        margin-top: 0.714rem;
+        padding-bottom: 0.143rem;
+        white-space: normal;
+    }
+
+    #write .footnote-line {
+        white-space: pre-wrap;
+    }
+
+    @media print {
+        body, html {
+            border: 1px solid transparent;
+            height: 99%;
+            break-after: avoid-page;
+            break-before: avoid-page;
+        }
+
+        #write {
+            margin-top: 0;
+            padding-top: 0;
+            border-color: transparent !important;
+        }
+
+        .typora-export * {
+            -webkit-print-color-adjust: exact;
+        }
+
+        html.blink-to-pdf {
+            font-size: 13px;
+        }
+
+        .typora-export #write {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 0;
+            break-after: avoid-page;
+        }
+
+        .typora-export #write::after {
+            height: 0;
+        }
+
+        @page {
+            margin: 20mm 0;
+        }
+    }
+
+    .footnote-line {
+        margin-top: 0.714em;
+        font-size: 0.7em;
+    }
+
+    a img, img a {
+        cursor: pointer;
+    }
+
+    pre.md-meta-block {
+        font-size: 0.8rem;
+        min-height: 0.8rem;
+        white-space: pre-wrap;
+        background-color: rgb(204, 204, 204);
+        display: block;
+        overflow-x: hidden;
+        background-position: initial initial;
+        background-repeat: initial initial;
+    }
+
+    p > .md-image:only-child:not(.md-img-error) img, p > img:only-child {
+        display: block;
+        margin: auto;
+    }
+
+    p > .md-image:only-child {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #write .MathJax_Display {
+        margin: 0.8em 0 0;
+    }
+
+    .md-math-block {
+        width: 100%;
+    }
+
+    .md-math-block:not(:empty)::after {
+        display: none;
+    }
+
+    [contenteditable="true"]:active, [contenteditable="true"]:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .md-task-list-item {
+        position: relative;
+        list-style-type: none;
+    }
+
+    .task-list-item.md-task-list-item {
+        padding-left: 0;
+    }
+
+    .md-task-list-item > input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -1.2em;
+        margin-top: calc(1em - 10px);
+    }
+
+    .math {
+        font-size: 1rem;
+    }
+
+    .md-toc {
+        min-height: 3.58rem;
+        position: relative;
+        font-size: 0.9rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .md-toc-content {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .md-toc-content::after, .md-toc::after {
+        display: none;
+    }
+
+    .md-toc-item {
+        display: block;
+        color: rgb(65, 131, 196);
+    }
+
+    .md-toc-item a {
+        text-decoration: none;
+    }
+
+    .md-toc-inner:hover {
+        text-decoration: underline;
+    }
+
+    .md-toc-inner {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .md-toc-h1 .md-toc-inner {
+        margin-left: 0;
+        font-weight: 700;
+    }
+
+    .md-toc-h2 .md-toc-inner {
+        margin-left: 2em;
+    }
+
+    .md-toc-h3 .md-toc-inner {
+        margin-left: 4em;
+    }
+
+    .md-toc-h4 .md-toc-inner {
+        margin-left: 6em;
+    }
+
+    .md-toc-h5 .md-toc-inner {
+        margin-left: 8em;
+    }
+
+    .md-toc-h6 .md-toc-inner {
+        margin-left: 10em;
+    }
+
+    @media screen and (max-width: 48em) {
+        .md-toc-h3 .md-toc-inner {
+            margin-left: 3.5em;
+        }
+
+        .md-toc-h4 .md-toc-inner {
+            margin-left: 5em;
+        }
+
+        .md-toc-h5 .md-toc-inner {
+            margin-left: 6.5em;
+        }
+
+        .md-toc-h6 .md-toc-inner {
+            margin-left: 8em;
+        }
+    }
+
+    a.md-toc-inner {
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    .footnote-line a:not(.reversefootnote) {
+        color: inherit;
+    }
+
+    .md-attr {
+        display: none;
+    }
+
+    .md-fn-count::after {
+        content: ".";
+    }
+
+    code, pre, samp, tt {
+        font-family: var(--monospace);
+    }
+
+    kbd {
+        margin: 0 0.1em;
+        padding: 0.1em 0.6em;
+        font-size: 0.8em;
+        color: rgb(36, 39, 41);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(173, 179, 185);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        box-shadow: rgba(12, 13, 14, 0.2) 0 1px 0, rgb(255, 255, 255) 0 0 0 2px inset;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-position: initial initial;
+        background-repeat: initial initial;
+    }
+
+    .md-comment {
+        color: rgb(162, 127, 3);
+        opacity: 0.8;
+        font-family: var(--monospace);
+    }
+
+    code {
+        text-align: left;
+    }
+
+    a.md-print-anchor {
+        white-space: pre !important;
+        border: none !important;
+        display: inline-block !important;
+        position: absolute !important;
+        width: 1px !important;
+        right: 0 !important;
+        outline: 0 !important;
+        text-shadow: initial !important;
+        background-position: 0 0 !important;
+        background-repeat: initial initial !important;
+    }
+
+    .md-inline-math .MathJax_SVG .noError {
+        display: none !important;
+    }
+
+    .html-for-mac .inline-math-svg .MathJax_SVG {
+        vertical-align: 0.2px;
+    }
+
+    .md-math-block .MathJax_SVG_Display {
+        text-align: center;
+        margin: 0;
+        position: relative;
+        text-indent: 0;
+        max-width: none;
+        max-height: none;
+        min-height: 0;
+        min-width: 100%;
+        width: auto;
+        overflow-y: hidden;
+        display: block !important;
+    }
+
+    .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display {
+        width: auto;
+        margin: inherit;
+        display: inline-block !important;
+    }
+
+    .MathJax_SVG .MJX-monospace {
+        font-family: var(--monospace);
+    }
+
+    .MathJax_SVG .MJX-sans-serif {
+        font-family: sans-serif;
+    }
+
+    .MathJax_SVG {
+        display: inline;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        zoom: 90%;
+        text-indent: 0;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        float: none;
+        direction: ltr;
+        max-width: none;
+        max-height: none;
+        min-width: 0;
+        min-height: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .MathJax_SVG * {
+        transition: none;
+    }
+
+    .MathJax_SVG_Display svg {
+        vertical-align: middle !important;
+        margin-bottom: 0 !important;
+    }
+
+    .os-windows.monocolor-emoji .md-emoji {
+        font-family: "Segoe UI Symbol", sans-serif;
+    }
+
+    .md-diagram-panel > svg {
+        max-width: 100%;
+    }
+
+    [lang="mermaid"] svg, [lang="flow"] svg {
+        max-width: 100%;
+    }
+
+    [lang="mermaid"] .node text {
+        font-size: 1rem;
+    }
+
+    table tr th {
+        border-bottom-width: 0;
+    }
+
+    video {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    iframe {
+        max-width: 100%;
+        width: 100%;
+        border: none;
+    }
+
+    .highlight td, .highlight tr {
+        border: 0;
+    }
+
+
+    :root {
+        --side-bar-bg-color: #fafafa;
+        --control-text-color: #777;
+    }
+
+    @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(51, 51, 51);
+        line-height: 1.6;
+    }
+
+    #write {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 30px;
+        padding-bottom: 100px;
+    }
+
+    #write > ul:first-child,
+    #write > ol:first-child {
+        margin-top: 30px;
+    }
+
+    a {
+        color: #4183C4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        line-height: 1.4;
+        cursor: text;
+    }
+
+    h1:hover a.anchor,
+    h2:hover a.anchor,
+    h3:hover a.anchor,
+    h4:hover a.anchor,
+    h5:hover a.anchor,
+    h6:hover a.anchor {
+        text-decoration: none;
+    }
+
+    h1 tt,
+    h1 code {
+        font-size: inherit;
+    }
+
+    h2 tt,
+    h2 code {
+        font-size: inherit;
+    }
+
+    h3 tt,
+    h3 code {
+        font-size: inherit;
+    }
+
+    h4 tt,
+    h4 code {
+        font-size: inherit;
+    }
+
+    h5 tt,
+    h5 code {
+        font-size: inherit;
+    }
+
+    h6 tt,
+    h6 code {
+        font-size: inherit;
+    }
+
+    h1 {
+        padding-bottom: .3em;
+        font-size: 2.25em;
+        line-height: 1.2;
+        border-bottom: 1px solid #eee;
+    }
+
+    h2 {
+        padding-bottom: .3em;
+        font-size: 1.75em;
+        line-height: 1.225;
+        border-bottom: 1px solid #eee;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.43;
+    }
+
+    h4 {
+        font-size: 1.25em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: 1em;
+        color: #777;
+    }
+
+    p,
+    blockquote,
+    ul,
+    ol,
+    dl,
+    table {
+        margin: 0.8em 0;
+    }
+
+    li > ol,
+    li > ul {
+        margin: 0 0;
+    }
+
+    hr {
+        height: 2px;
+        padding: 0;
+        margin: 16px 0;
+        background-color: #e7e7e7;
+        border: 0 none;
+        overflow: hidden;
+        box-sizing: content-box;
+    }
+
+    li p.first {
+        display: inline-block;
+    }
+
+    ul,
+    ol {
+        padding-left: 30px;
+    }
+
+    ul:first-child,
+    ol:first-child {
+        margin-top: 0;
+    }
+
+    ul:last-child,
+    ol:last-child {
+        margin-bottom: 0;
+    }
+
+    blockquote {
+        border-left: 4px solid #dfe2e5;
+        padding: 0 15px;
+        color: #777777;
+    }
+
+    blockquote blockquote {
+        padding-right: 0;
+    }
+
+    table {
+        padding: 0;
+        word-break: initial;
+    }
+
+    table tr {
+        border-top: 1px solid #dfe2e5;
+        margin: 0;
+        padding: 0;
+    }
+
+    table tr:nth-child(2n),
+    thead {
+        background-color: #f8f8f8;
+    }
+
+    table tr th {
+        font-weight: bold;
+        border: 1px solid #dfe2e5;
+        border-bottom: 0;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px;
+    }
+
+    table tr td {
+        border: 1px solid #dfe2e5;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px;
+    }
+
+    table tr th:first-child,
+    table tr td:first-child {
+        margin-top: 0;
+    }
+
+    table tr th:last-child,
+    table tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    .CodeMirror-lines {
+        padding-left: 4px;
+    }
+
+    .code-tooltip {
+        box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
+        border-top: 1px solid #eef2f2;
+    }
+
+    .md-fences,
+    code,
+    tt {
+        border: 1px solid #e7eaed;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        padding: 0;
+        padding: 2px 4px 0 4px;
+        font-size: 0.9em;
+    }
+
+    code {
+        background-color: #f3f4f4;
+        padding: 0 2px 0 2px;
+    }
+
+    .md-fences {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-top: 8px;
+        padding-bottom: 6px;
+    }
+
+
+    .md-task-list-item > input {
+        margin-left: -1.3em;
+    }
+
+    @media print {
+        html {
+            font-size: 13px;
+        }
+
+        table,
+        pre {
+            page-break-inside: avoid;
+        }
+
+        pre {
+            word-wrap: break-word;
+        }
+    }
+
+    .md-fences {
+        background-color: #f8f8f8;
+    }
+
+    #write pre.md-meta-block {
+        padding: 1rem;
+        font-size: 85%;
+        line-height: 1.45;
+        background-color: #f7f7f7;
+        border: 0;
+        border-radius: 3px;
+        color: #777777;
+        margin-top: 0 !important;
+    }
+
+    .mathjax-block > .code-tooltip {
+        bottom: .375rem;
+    }
+
+    .md-mathjax-midline {
+        background: #fafafa;
+    }
+
+    #write > h3.md-focus:before {
+        left: -1.5625rem;
+        top: .375rem;
+    }
+
+    #write > h4.md-focus:before {
+        left: -1.5625rem;
+        top: .285714286rem;
+    }
+
+    #write > h5.md-focus:before {
+        left: -1.5625rem;
+        top: .285714286rem;
+    }
+
+    #write > h6.md-focus:before {
+        left: -1.5625rem;
+        top: .285714286rem;
+    }
+
+    .md-image > .md-meta {
+        /*border: 1px solid #ddd;*/
+        border-radius: 3px;
+        padding: 2px 0 0 4px;
+        font-size: 0.9em;
+        color: inherit;
+    }
+
+    .md-tag {
+        color: #a7a7a7;
+        opacity: 1;
+    }
+
+    .md-toc {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sidebar-tabs {
+        border-bottom: none;
+    }
+
+    #typora-quick-open {
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+    }
+
+    #typora-quick-open-item {
+        background-color: #FAFAFA;
+        border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    /** focus mode */
+    .on-focus-mode blockquote {
+        border-left-color: rgba(85, 85, 85, 0.12);
+    }
+
+    header, .context-menu, .megamenu-content, footer {
+        font-family: "Segoe UI", "Arial", sans-serif;
+    }
+
+    .file-node-content:hover .file-node-icon,
+    .file-node-content:hover .file-node-open-state {
+        visibility: visible;
+    }
+
+    .mac-seamless-mode #typora-sidebar {
+        background-color: #fafafa;
+        background-color: var(--side-bar-bg-color);
+    }
+
+    .md-lang {
+        color: #b4654d;
+    }
+
+    .html-for-mac .context-menu {
+        --item-hover-bg-color: #E6F0FE;
+    }
+
+    #md-notification .btn {
+        border: 0;
+    }
+
+    .dropdown-menu .divider {
+        border-color: #e5e5e5;
+    }
+
+    .typora-export li, .typora-export p, .typora-export, .footnote-line {
+        white-space: normal;
+        word-break: break-all;
+    }
+    </style>
 </head>
-<body class="markdown-body">
-<h3>求职意向:前端开发工程师</h3>
-<h3>工作地点:长沙</h3>
-<h2>联系方式</h2>
-<ul>
-<li>手机:15388017559</li>
-<li>Email:<a href="mailto:rayjump@163.com"></a><a href="mailto:rayjump@163.com">rayjump@163.com</a></li>
-</ul>
-<h2>个人信息</h2>
-<ul>
-<li>姓名:雷佳旺</li>
-<li>性别:男</li>
-<li>出生年月:1991年11月7日</li>
-<li>现居城市:长沙</li>
-<li>工作年限:5年</li>
-<li>Github: <a href="https://github.com/ljwrer">https://github.com/ljwrer</a></li>
-<li>证书:<a href="http://mooc.study.163.com/smartSpec/Authority.htm?certNo=M2015100000012#/" rel="nofollow">http://mooc.study.163.com/smartSpec/Authority.htm?certNo=M2015100000012#/</a></li>
-</ul>
-<h2>教育背景</h2>
-<ul>
-<li>学历:大学本科</li>
-<li>毕业院校:西安电子科技大学</li>
-<li>所学专业:通信工程学院 信息工程</li>
-<li>入学和毕业年份:2009年-2013年</li>
-<li>学制:全日制</li>
-<li>学位:学士</li>
-<li>外语:CET4 548</li>
-</ul>
-<h2>工作及项目经历</h2>
-<h3>北京易观智库网络科技有限公司-应用研发部-前端架构组</h3>
-<p>stack:nginx/Express/Vue/Vuex/jQuery</p>
-<h4>基础架构支撑</h4>
-<ul>
-<li>易观前端组件化脚手架工具</li>
-<li>易观mock服务搭建</li>
-<li>易观前端UI组件库开发及维护</li>
-</ul>
-<pre><code>基于node的cli工具,包含组件开发、测试、文档生成、发布流程,动态生成基于webpack及相关工具配置,提高前端组件化开发效率
-基于阿里RAP的前端Mock Server,提升前后端的协作能力
-基于Vue及jQuery的前端组件库,加速前端业务开发
-</code></pre>
-<h4>应用开发</h4>
-<ol>
-<li>架构支撑</li>
-</ol>
-<ul>
-<li>易观千帆<a href="http://qianfan.analysys.cn" rel="nofollow">http://qianfan.analysys.cn</a></li>
-<li>易观方舟<a href="http://ark.analysys.cn" rel="nofollow">http://ark.analysys.cn</a></li>
-</ul>
-<pre><code>负责Code Review,公共模块开发及技术选型
-</code></pre>
-<ol start="2">
-<li>主导项目</li>
-</ol>
-<ul>
-<li>易观-德勤第四张报表<a href="http://4threport.com" rel="nofollow">http://4threport.com</a></li>
-<li>易观-客户统一视图<a href="http://ecif.analysys.cn" rel="nofollow">http://ecif.analysys.cn</a></li>
-</ul>
-<pre><code>基于Vue的SPA, 负责项目架构设计，业务模块拆分及核心交易流程开发
-</code></pre>
-<ol start="3">
-<li>参与项目</li>
-</ol>
-<ul>
-<li>易观新官网<a href="http://www.analysys.cn" rel="nofollow">http://www.analysys.cn</a></li>
-</ul>
-<pre><code>负责首页动画与交互的设计及实现
-</code></pre>
-<h3>步步高集团电商事业部(云猴网)-UED-Web前端开发工程师</h3>
-<p>stack:Express/Vue/Vuex/vue-router/cordova/jQuery</p>
-<ol>
-<li>主导项目</li>
-</ol>
-<ul>
-<li>步步高门店管理系统</li>
-</ul>
-<pre><code>基于Vue/Vuex+cordova的hybrid app,负责前端技术选型及业务开发
-</code></pre>
-<ol start="2">
-<li>参与项目</li>
-</ol>
-<ul>
-<li>步步高B2B订货平台<a href="http://b2bsale.bbg.com.cn" rel="nofollow">http://b2bsale.bbg.com.cn</a></li>
-<li>步步高大会员<a href="http://wx.yunhou.com" rel="nofollow">http://wx.yunhou.com</a></li>
-<li>步步高云猴网OMS系统</li>
-</ul>
-<h2>Tech stack</h2>
-<table>
-    <tbody>
-    <tr><th>lib&amp;framework</th><th>node</th><th>工程化</th></tr>
-    <tr><td>css:Sass,BEM</td><td>bundler:webpack,rollup,gulp</td><td>vcs:git,git flow</td></tr>
-    <tr><td>framework:Vue/Vuex,React/Redux</td><td>template:EJS,Handlebars</td><td>CI:Jenkins,GitLab CI</td></tr>
-    <tr><td>DOM:jQuery,Dojo,Zepto</td><td>web framework:Express</td></tr>
-    <tr><td>chart:Echarts</td><td>test:karma,mocha,chai,sinon,istanbul</td></tr>
-    <tr><td>app:cordova,Crosswalk</td><td>lint:ESLint,standard</td></tr>
-    </tbody>
-</table>
-<h2>自我评价</h2>
-<ul>
-<li>热爱技术,喜爱编程,包括但不局限于web前端开发,喜欢阅读计算机及前端相关书籍,有较强的自我驱动力</li>
-<li>熟悉website,web app及hybrid app开发,包含PC及移动平台</li>
-<li>有基于Vue/Vuex的大型项目经验,了解React+Redux</li>
-<li>熟悉JavaScript对象模型及作用域,了解JavaScript多种范式的面向对象开发</li>
-<li>了解JavaScript常用设计模式</li>
-<li>了解常用数据结构及其JavaScript实现</li>
-<li>了解计算机网络及http协议</li>
-<li>了解单元测试并能应用到开发中</li>
-<li>了解Node.js及Express等相关生态</li>
-<li>了解基于Node.js的脚本及cli工具开发</li>
-<li>熟练使用GitHub,Google,Stack Overflow解决问题</li>
-</ul>
-<a href="./雷佳旺-Web前端开发工程师-简历.pdf" download><button style="cursor: pointer">下载pdf版</button></a>
+<body class='typora-export'>
+<div id='write' class='is-mac'><h3><a name='header-n0' class='md-header-anchor '></a>求职意向:前端工程师</h3>
+    <h3><a name='header-n2' class='md-header-anchor '></a>工作地点:长沙</h3>
+    <h2><a name='header-n3' class='md-header-anchor '></a>联系方式</h2>
+    <ul>
+        <li>手机:15388017559</li>
+        <li>Email:<a href="mailto:rayjump@163.com"><a href='mailto:rayjump@163.com' target='_blank' class='url'>rayjump@163.com</a></a>
+        </li>
+    </ul>
+    <h2><a name='header-n9' class='md-header-anchor '></a>个人信息</h2>
+    <ul>
+        <li>姓名:雷佳旺</li>
+        <li>性别:男</li>
+        <li>出生年月:1991年11月7日</li>
+        <li>现居城市:长沙</li>
+        <li>工作年限:6年</li>
+        <li>Github: <a href='https://github.com/ljwrer'>https://github.com/ljwrer</a></li>
+        <li>证书:<a href='http://mooc.study.163.com/smartSpec/Authority.htm?certNo=M2015100000012#/'>http://mooc.study.163.com/smartSpec/Authority.htm?certNo=M2015100000012#/</a>
+        </li>
+    </ul>
+    <h2><a name='header-n25' class='md-header-anchor '></a>教育背景</h2>
+    <ul>
+        <li>学历:大学本科</li>
+        <li>毕业院校:西安电子科技大学</li>
+        <li>所学专业:通信工程学院 信息工程</li>
+        <li>入学和毕业年份:2009年-2013年</li>
+        <li>学制:全日制</li>
+        <li>学位:学士</li>
+        <li>外语:CET4 548</li>
+    </ul>
+    <h2><a name='header-n41' class='md-header-anchor '></a> 工作经历</h2>
+    <h3><a name='header-n223' class='md-header-anchor '></a>芒果TV</h3>
+    <p>节目平台研发部-前端工程师</p>
+    <p>工作内容:</p>
+    <ul>
+        <li>负责芒果tv专题活动h5可视化编辑工具架构设计及开发</li>
+        <li>负责芒果tv数据采集web sdk开发及维护</li>
+        <li>负责芒果tv节目平台数据清洗服务及数据可视化平台开发</li>
+    </ul>
+    <h3><a name='header-n167' class='md-header-anchor '></a>北京易观智库网络科技有限公司</h3>
+    <p>应用研发部-前端架构组</p>
+    <p>工作内容:</p>
+    <ul>
+        <li><p>负责易观前端组件化脚手架工具开发</p></li>
+        <li><p>负责易观前端UI组件库开发及维护</p></li>
+        <li><p>参与易观千帆前端开发</p></li>
+        <li><p>参与易观官网前端开发</p></li>
+        <li><p>线上产品</p>
+            <ul>
+                <li><a href='https://qianfan.analysys.cn' target='_blank' class='url'>https://qianfan.analysys.cn</a>
+                </li>
+                <li><a href='https://www.analysys.cn' target='_blank' class='url'>https://www.analysys.cn</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h3><a name='header-n80' class='md-header-anchor '></a>步步高集团电商事业部(云猴网)</h3>
+    <p>UED-前端工程师</p>
+    <p>工作内容:</p>
+    <ul>
+        <li>负责步步高门店管理系统app开发</li>
+        <li>负责步步高微信公众号维护</li>
+        <li>负责云猴网erp,oms后台系统前端开发</li>
+    </ul>
+    <h2><a name='header-n164' class='md-header-anchor '></a>自我评价</h2>
+    <ul>
+        <li>热爱技术,喜爱编程,包括但不局限于前端开发,喜欢阅读计算机相关书籍,有较强的自我驱动力</li>
+        <li>熟悉面向对象程序设计，能灵活运用各种设计模式</li>
+        <li>有基于Vue的大型项目经验,了解React</li>
+        <li>熟悉JavaScript对象模型,了解JavaScript多种范式开发</li>
+        <li>了解常用数据结构及其JavaScript实现</li>
+        <li>了解计算机网络及http协议</li>
+        <li>了解单元测试并能应用到开发中</li>
+        <li>了解Node.js及Express等相关生态</li>
+        <li>了解dart及typescript语言</li>
+        <li>熟练使用GitHub,Google,Stack Overflow解决问题</li>
+    </ul>
+    <a href="雷佳旺-前端工程师-简历.pdf" download>
+        <button style="cursor: pointer">下载pdf版</button>
+    </a>
+</div>
 </body>
 </html>
-
