@@ -4,7 +4,7 @@
 ## 联系方式
 
 - 手机:15388017559
-- Email:<a href="mailto:rayjump@163.com">rayjump@163.com</a>
+- Email:<a href="mailto:rayjump@qq.com">rayjump@qq.com</a>
 
 ## 个人信息
 
@@ -14,7 +14,6 @@
  - 现居城市:长沙
  - 工作年限:6年
  - Github: [https://github.com/ljwrer](https://github.com/ljwrer)
- - 证书:[http://mooc.study.163.com/smartSpec/Authority.htm?certNo=M2015100000012#/](http://mooc.study.163.com/smartSpec/Authority.htm?certNo=M2015100000012#/)
 
 ## 教育背景
 
@@ -26,51 +25,41 @@
  - 学位:学士
  - 外语:CET4 548
 
-##  工作经历
+##  相关工作经历
 
-### 芒果TV
+### 湖南长房数创科技有限公司
 
-节目平台研发部-前端工程师
+产品研发部 2020.03至今
 
-工作内容:
+负责建立前端开发体系
 
-- 负责芒果tv专题活动h5可视化编辑工具架构设计及开发
-- 负责芒果tv数据采集web sdk开发及维护
-- 负责芒果tv节目平台数据清洗服务及数据可视化平台开发
+### 湖南快乐阳光互动娱乐传媒有限公司(芒果TV) 
+
+产品技术中心-节目平台研发部 2018.03 - 2020.03
+
+- 负责芒果tv可视化网页编辑器墨斗平台架构设计及实现，支持移动端及OTT项目生成，上线项目千余，覆盖芒果tv平台运营中心及大会员中心80%活动运营需求 (vue + ts + Express)
+- 参与芒果tv DSL智能cms系统架构设计并负责前端开发，满足全平台（Android、IOS、web、OTT、IPTV）内容运营需求 (react + mobx + ts)
+- 负责芒果tv部分前端公共库及公共页面开发 （ts）
 
 ### 北京易观智库网络科技有限公司
 
-应用研发部-前端架构组
+应用研发部-前端架构组 2016.10 - 2018.03
 
-工作内容:
+- 负责易观前端UI组件库开发及维护 (vue)
+- 负责易观官网开发 (Express)
 
-- 负责易观前端组件化脚手架工具开发
-- 负责易观前端UI组件库开发及维护
-- 参与易观千帆前端开发
-- 参与易观官网前端开发
-- 线上产品
-  - https://qianfan.analysys.cn
-  - https://www.analysys.cn
+### 步步高集团(云猴网) 
 
-### 步步高集团电商事业部(云猴网)
+电商事业部UED 2015.10 - 2016.10 
 
-UED-前端工程师
+- 负责步步高门店管理系统hybrid app开发 （vue1.0 + cordova）
 
-工作内容:
 
-- 负责步步高门店管理系统app开发
-- 负责步步高微信公众号维护
-- 负责云猴网erp,oms后台系统前端开发
 
-## 自我评价
+## 相关技能
 
- - 热爱技术,喜爱编程,包括但不局限于前端开发,喜欢阅读计算机相关书籍,有较强的自我驱动力
- - 熟悉面向对象程序设计，能灵活运用各种设计模式
- - 有基于Vue的大型项目经验,了解React
- - 熟悉JavaScript对象模型,了解JavaScript多种范式开发
- - 了解常用数据结构及其JavaScript实现
- - 了解计算机网络及http协议
- - 了解单元测试并能应用到开发中
- - 了解Node.js及Express等相关生态
- - 了解dart及typescript语言
+ - 熟悉可视化编辑器架构设计与实现
+ - 熟悉前端面向对象设计
+ - 熟悉基于TypeScript的面向对象前端开发
+ - 了解常见web 安全攻防策略
  - 熟练使用GitHub,Google,Stack Overflow解决问题
